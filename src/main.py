@@ -7,7 +7,9 @@ def index():
     try:
         host_name = "hello"
         host_ip = "joyce"
+        print("I edited file and pushed to git")
         return render_template('index.html', hostname=host_name, ip=host_ip)
+    
     except:
         return render_template('error.html')
 
